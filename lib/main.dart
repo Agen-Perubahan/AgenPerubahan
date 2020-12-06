@@ -15,15 +15,23 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  List image = [
+    'assets/images/gedungkotak1.png',
+    'assets/images/gedungkotak2.png',
+    'assets/images/gedungkotak3.png',
+    'assets/images/gedungkotak4.png',
+    'assets/images/gedungkotak5.png',
+    'assets/images/gedungkotak6.png',
+    'assets/images/gedungkotak7.png',
+    'assets/images/gedungkotak8.png'
+  ];
   VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.network(
-        'http://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4')
+    _controller = VideoPlayerController.asset("assets/video/video.mp4")
       ..initialize().then((_) {
-        // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
       });
   }
@@ -44,12 +52,13 @@ class _MyAppState extends State<MyApp> {
               // ),
               ),
           Container(
-              padding: EdgeInsets.only(bottom: 50, top: 20),
+              padding: EdgeInsets.only(bottom: 50, top: 5),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
+                    //height: MediaQuery.of(context).size.height * 0.20,
                     child: Text(
                       "Taman Pintar Yogyakarta",
                       textAlign: TextAlign.center,
@@ -92,96 +101,28 @@ class _MyAppState extends State<MyApp> {
                         ),
                       )),
                   Container(
-                      margin: EdgeInsets.only(
-                        top: 20,
-                      ),
-                      height: 100,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        padding: const EdgeInsets.all(8),
-                        children: <Widget>[
-                          Container(
-                            height: 50,
-                            color: Colors.amber[600],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[500],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[100],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[600],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[500],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[100],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[600],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[500],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[100],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[600],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[500],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[100],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[600],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[500],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                          Container(
-                            height: 50,
-                            color: Colors.amber[100],
-                            child: const Center(child: Text('Galeri')),
-                          ),
-                        ],
-                      )),
+                    // margin: EdgeInsets.only(
+                    //   top: 20,
+                    // ),
+                    height: 200,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      padding: const EdgeInsets.all(10),
+                      itemCount: image.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 100,
+                          padding: EdgeInsets.all(5),
+                          child: Image.asset(image[index]),
+                        );
+                      },
+                    ),
+                  )
                 ],
               )),
           SizedBox.expand(
             child: DraggableScrollableSheet(
-              initialChildSize: 0.2,
+              initialChildSize: 0.1,
               minChildSize: 0.1,
               maxChildSize: 1.0,
               builder: (context, scrollController) {
@@ -203,7 +144,7 @@ class _MyAppState extends State<MyApp> {
                               "Daftar Wahana Taman Pintar Yogyakarta",
                               textAlign: TextAlign.center,
                               style:
-                                  TextStyle(fontSize: 25, color: Colors.white),
+                                  TextStyle(fontSize: 20, color: Colors.white),
                             ),
                           ),
                           new GestureDetector(
@@ -221,21 +162,22 @@ class _MyAppState extends State<MyApp> {
                                       MainAxisAlignment.spaceAround,
                                   children: [
                                     Container(
+                                      child: Image.asset(
+                                          "assets/images/gedungkotak1.png"),
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: NetworkImage(
-                                              "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
-                                        ),
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(8.0)),
                                         color: Colors.redAccent,
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 1"),
+                                      color: Colors.red,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Wisata Bahari"),
                                     )
                                   ],
                                 ),
@@ -260,7 +202,8 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
@@ -273,7 +216,9 @@ class _MyAppState extends State<MyApp> {
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 2"),
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Playground"),
                                     )
                                   ],
                                 ),
@@ -298,7 +243,8 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
@@ -311,7 +257,9 @@ class _MyAppState extends State<MyApp> {
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 3"),
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Kampung Kerajinan"),
                                     )
                                   ],
                                 ),
@@ -336,7 +284,8 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
@@ -349,7 +298,9 @@ class _MyAppState extends State<MyApp> {
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 4"),
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Planetarium"),
                                     )
                                   ],
                                 ),
@@ -374,7 +325,8 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
@@ -387,7 +339,9 @@ class _MyAppState extends State<MyApp> {
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 5"),
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Science Theater"),
                                     )
                                   ],
                                 ),
@@ -412,7 +366,8 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
@@ -425,7 +380,9 @@ class _MyAppState extends State<MyApp> {
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 6"),
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Zona Perpus"),
                                     )
                                   ],
                                 ),
@@ -450,7 +407,8 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       height: 100,
-                                      width: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
@@ -463,7 +421,50 @@ class _MyAppState extends State<MyApp> {
                                       ),
                                     ),
                                     Container(
-                                      child: Text("Nama Wahana 7"),
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Gedung Oval"),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              height: 120,
+                              width: MediaQuery.of(context).size.width,
+                            ),
+                          ),
+                          new GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => WahanaSatu()),
+                              );
+                            },
+                            child: Container(
+                              child: Card(
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Container(
+                                      height: 100,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.30,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image: NetworkImage(
+                                              "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
+                                        ),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8.0)),
+                                        color: Colors.redAccent,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width *
+                                          0.40,
+                                      child: Text("Gedung Kotak"),
                                     )
                                   ],
                                 ),
