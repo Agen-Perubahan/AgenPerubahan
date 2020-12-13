@@ -1,4 +1,5 @@
 import 'package:agenperubahan/wahana/wahana1.dart';
+import 'package:agenperubahan/wahana/wahana2.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -23,14 +24,56 @@ class _MyAppState extends State<MyApp> {
     'assets/images/gedungkotak5.png',
     'assets/images/gedungkotak6.png',
     'assets/images/gedungkotak7.png',
-    'assets/images/gedungkotak8.png'
+    'assets/images/gedungkotak8.png',
+    'assets/images/gedungoval1.png',
+    'assets/images/gedungoval2.png',
+    'assets/images/gedungoval3.png',
+    'assets/images/gedungoval4.png',
+    'assets/images/gedungoval5.png',
+    'assets/images/gedungoval6.png',
+    'assets/images/gedungoval8.png',
+    'assets/images/gedungoval9.png',
+    'assets/images/gedungoval10.png',
+    'assets/images/gedungoval11.png',
+    'assets/images/gedungoval12.png',
+    'assets/images/gedungoval13.png',
+    'assets/images/gedungpaud1.png',
+    'assets/images/gedungpaud2.png',
+    'assets/images/gedungpaud3.png',
+    'assets/images/gedungpaud4.png',
+    'assets/images/kampungkerajinan1.png',
+    'assets/images/kampungkerajinan2.png',
+    'assets/images/kampungkerajinan3.png',
+    'assets/images/kampungkerajinan4.png',
+    'assets/images/kampungkerajinan5.png',
+    'assets/images/kampungkerajinan6.png',
+    'assets/images/kampungkerajinan7.png',
+    'assets/images/kampungkerajinan8.png',
+    'assets/images/kampungkerajinan9.png',
+    'assets/images/planetarium1.png',
+    'assets/images/planetarium2.png',
+    'assets/images/playground1.png',
+    'assets/images/playground2.png',
+    'assets/images/playground3.png',
+    'assets/images/playground4.png',
+    'assets/images/playground5.png',
+    'assets/images/playground6.png',
+    'assets/images/playground7.png',
+    'assets/images/playground8.png',
+    'assets/images/sciencetheater1.png',
+    'assets/images/sciencetheater2.png',
+    'assets/images/wahanabahari1.png',
+    'assets/images/wahanabahari2.png',
+    'assets/images/zonaperpus1.png',
+    'assets/images/zonaperpus2.png',
   ];
   VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset("assets/video/video.mp4")
+    _controller = VideoPlayerController.network(
+        'http://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4')
       ..initialize().then((_) {
         setState(() {});
       });
@@ -54,13 +97,11 @@ class _MyAppState extends State<MyApp> {
           Container(
               padding: EdgeInsets.only(bottom: 50, top: 5),
               child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    //height: MediaQuery.of(context).size.height * 0.20,
                     child: Text(
-                      "Taman Pintar Yogyakarta",
+                      "Mengenal Taman Pintar Secara Virtual",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 30,
@@ -68,6 +109,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   Container(
+                    padding: EdgeInsets.all(10),
                     child: Center(
                       child: _controller.value.initialized
                           ? AspectRatio(
@@ -147,7 +189,7 @@ class _MyAppState extends State<MyApp> {
                                   TextStyle(fontSize: 20, color: Colors.white),
                             ),
                           ),
-                          new GestureDetector(
+                          GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
@@ -163,18 +205,15 @@ class _MyAppState extends State<MyApp> {
                                   children: [
                                     Container(
                                       child: Image.asset(
-                                          "assets/images/gedungkotak1.png"),
-                                      height: 100,
+                                          "assets/images/wahanabahari1.png"),
                                       width: MediaQuery.of(context).size.width *
                                           0.30,
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(8.0)),
-                                        color: Colors.redAccent,
                                       ),
                                     ),
                                     Container(
-                                      color: Colors.red,
                                       width: MediaQuery.of(context).size.width *
                                           0.40,
                                       child: Text("Wisata Bahari"),
@@ -186,12 +225,12 @@ class _MyAppState extends State<MyApp> {
                               width: MediaQuery.of(context).size.width,
                             ),
                           ),
-                          new GestureDetector(
+                          GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => WahanaSatu()),
+                                    builder: (context) => WahanaDua()),
                               );
                             },
                             child: Container(
@@ -201,18 +240,14 @@ class _MyAppState extends State<MyApp> {
                                       MainAxisAlignment.spaceAround,
                                   children: [
                                     Container(
+                                      child: Image.asset(
+                                          "assets/images/playground1.png"),
                                       height: 100,
                                       width: MediaQuery.of(context).size.width *
                                           0.30,
                                       decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: NetworkImage(
-                                              "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
-                                        ),
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(8.0)),
-                                        color: Colors.redAccent,
                                       ),
                                     ),
                                     Container(
@@ -227,12 +262,12 @@ class _MyAppState extends State<MyApp> {
                               width: MediaQuery.of(context).size.width,
                             ),
                           ),
-                          new GestureDetector(
+                          GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => WahanaSatu()),
+                                    builder: (context) => WahanaDua()),
                               );
                             },
                             child: Container(

@@ -29,7 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
   sliding_up_panel: ^1.0.2
-  video_player: ^1.0.0
+  video_player: ^1.0.1
   chewie: 
 
 
@@ -61,6 +61,50 @@ flutter:
     - assets/images/gedungkotak6.png
     - assets/images/gedungkotak7.png
     - assets/images/gedungkotak8.png
+    - assets/images/gedungoval1.png
+    - assets/images/gedungoval2.png
+    - assets/images/gedungoval3.png
+    - assets/images/gedungoval4.png
+    - assets/images/gedungoval5.png
+    - assets/images/gedungoval6.png
+
+    - assets/images/gedungoval8.png
+    - assets/images/gedungoval9.png
+    - assets/images/gedungoval10.png
+    - assets/images/gedungoval11.png
+    - assets/images/gedungoval12.png
+    - assets/images/gedungoval13.png
+    - assets/images/gedungpaud1.png
+    - assets/images/gedungpaud2.png
+    - assets/images/gedungpaud3.png
+    - assets/images/gedungpaud4.png
+
+    - assets/images/kampungkerajinan1.png
+    - assets/images/kampungkerajinan2.png
+    - assets/images/kampungkerajinan3.png
+    - assets/images/kampungkerajinan4.png
+    - assets/images/kampungkerajinan5.png
+    - assets/images/kampungkerajinan6.png
+    - assets/images/kampungkerajinan7.png
+    - assets/images/kampungkerajinan8.png
+    - assets/images/kampungkerajinan9.png
+    - assets/images/planetarium1.png
+    - assets/images/planetarium2.png
+    - assets/images/playground1.png
+    - assets/images/playground2.png
+    - assets/images/playground3.png
+    - assets/images/playground4.png
+    - assets/images/playground5.png
+    - assets/images/playground6.png
+    - assets/images/playground7.png
+    - assets/images/playground8.png
+    - assets/images/sciencetheater1.png
+    - assets/images/sciencetheater2.png
+    - assets/images/wahanabahari1.png
+    - assets/images/wahanabahari2.png
+    - assets/images/zonaperpus1.png
+    - assets/images/zonaperpus2.png
+
    
   
 
