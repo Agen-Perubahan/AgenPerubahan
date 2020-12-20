@@ -121,17 +121,14 @@ class _ChewieDemoState extends State<ChewieDemo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: widget.title,
       theme: ThemeData.light().copyWith(
         platform: _platform ?? Theme.of(context).platform,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-        ),
         body: Column(
           children: <Widget>[
             Container(
+              padding: EdgeInsets.only(top: 20),
               child: Text(
                 "Mengenal Taman Pintar Secara Virtual",
                 textAlign: TextAlign.center,
@@ -163,6 +160,7 @@ class _ChewieDemoState extends State<ChewieDemo> {
               ),
             ),
             FlatButton(
+                padding: EdgeInsets.only(bottom: 20),
                 onPressed: () {
                   Navigator.push(
                     context,
