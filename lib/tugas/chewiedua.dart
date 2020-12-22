@@ -98,13 +98,11 @@ class _ChewieDemoState extends State<ChewieDemo> {
   @override
   void initState() {
     super.initState();
-    _videoPlayerController1 = VideoPlayerController.network(
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4');
+    _videoPlayerController1 = VideoPlayerController.asset("assets/video.mp4");
 
-    VideoPlayerController.asset('assets/videos/sample.mp4');
     _chewieController = ChewieController(
       videoPlayerController: _videoPlayerController1,
-      aspectRatio: 3 / 2,
+      aspectRatio: 16 / 9,
       autoPlay: false,
       looping: true,
     );
@@ -128,7 +126,7 @@ class _ChewieDemoState extends State<ChewieDemo> {
         body: Column(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(top: 20),
+              margin: EdgeInsets.only(top: 20),
               child: Text(
                 "Mengenal Taman Pintar Secara Virtual",
                 textAlign: TextAlign.center,
@@ -138,11 +136,19 @@ class _ChewieDemoState extends State<ChewieDemo> {
               ),
             ),
             Expanded(
-              child: Center(
-                child: Chewie(
-                  controller: _chewieController,
+              child: Container(
+                margin: EdgeInsets.only(top: 50, bottom: 50),
+                color: Colors.red,
+                padding: EdgeInsets.all(10),
+                child: Center(
+                  child: Chewie(
+                    controller: _chewieController,
+                  ),
                 ),
               ),
+            ),
+            Container(
+              child: Text("Galeri"),
             ),
             Container(
               height: 200,
