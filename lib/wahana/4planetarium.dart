@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class WahanaSatu extends StatelessWidget {
+class WahanaEmpat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,7 +10,7 @@ class WahanaSatu extends StatelessWidget {
         children: [
           Center(
               child: Image.asset(
-            "assets/images/wahanabahari1.png",
+            "assets/images/planetarium1.png",
             scale: 0.8,
           )),
         ],
@@ -35,7 +35,7 @@ class WahanaSatu extends StatelessWidget {
                 ),
                 color: Colors.purple,
                 child: Text(
-                  "WISATA BAHARI",
+                  "PLANETARIUM",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -48,20 +48,26 @@ class WahanaSatu extends StatelessWidget {
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
-                  text:
-                      "Kolam air yang berfungsi sebagai sungai/danau dimana anak-anak dapat menaiki perahu diatasnya",
+                  text: "Mengenalkan dan dapat melihat benda-benda langit",
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   children: <TextSpan>[
                     TextSpan(
                       text:
-                          ' Pengunjung dapat belajar cara kerja kapal bisa mengapung diatas air. Belajar jenis jenis kapal dengan menggunakan miniatur yang tersedia.',
+                          ' Dalam wahan ini, pengunjung dapat mempelajari benda benda langit.',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
                     ),
+                    TextSpan(
+                      text:
+                          ' Disini menggunakan proyektor digital untuk memeragakan benda benda langit, sehingga ilmu lebih mudah diserap dan tidak terkesan membosankan.',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -83,7 +89,7 @@ class WahanaSatu extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/wahanabahari2.png',
+                        'assets/images/planetarium2.png',
                         width: 110.0,
                         height: 110.0,
                       ),

@@ -1,3 +1,5 @@
+import 'package:agenperubahan/wahana/3kampungkerajinan.dart';
+import 'package:agenperubahan/wahana/4planetarium.dart';
 import 'package:agenperubahan/wahana/wahana1.dart';
 import 'package:agenperubahan/wahana/wahana2.dart';
 import 'package:flutter/material.dart';
@@ -108,7 +110,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaDua()),
+                                  builder: (context) => WahanaTiga()),
                             );
                           },
                           child: Container(
@@ -119,7 +121,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/kampungkerajinan1.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,
@@ -145,7 +147,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaSatu()),
+                                  builder: (context) => WahanaEmpat()),
                             );
                           },
                           child: Container(
@@ -182,7 +184,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaSatu()),
+                                  builder: (context) => WahanaEmpat()),
                             );
                           },
                           child: Container(

@@ -126,7 +126,7 @@ class _ChewieDemoState extends State<ChewieDemo> {
         body: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(top: 20),
+              margin: EdgeInsets.only(top: 60),
               child: Text(
                 "Mengenal Taman Pintar Secara Virtual",
                 textAlign: TextAlign.center,
@@ -137,8 +137,8 @@ class _ChewieDemoState extends State<ChewieDemo> {
             ),
             Expanded(
               child: Container(
+                color: Colors.blue,
                 margin: EdgeInsets.only(top: 50, bottom: 50),
-                color: Colors.red,
                 padding: EdgeInsets.all(10),
                 child: Center(
                   child: Chewie(
@@ -148,24 +148,34 @@ class _ChewieDemoState extends State<ChewieDemo> {
               ),
             ),
             Container(
-              child: Text("Galeri"),
-            ),
-            Container(
-              height: 200,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.all(10),
-                itemCount: image.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: 100,
-                    padding: EdgeInsets.all(5),
-                    child: Image.asset(image[index]),
-                  );
-                },
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(10),
+              color: Colors.red,
+              child: Column(
+                children: [
+                  Container(
+                    child: Text("Galeri"),
+                  ),
+                  Container(
+                    height: 200,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      padding: const EdgeInsets.all(10),
+                      itemCount: image.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 100,
+                          padding: EdgeInsets.all(5),
+                          child: Image.asset(image[index]),
+                        );
+                      },
+                    ),
+                  ),
+                ],
               ),
             ),
             FlatButton(
+                color: Colors.blue,
                 padding: EdgeInsets.only(bottom: 20),
                 onPressed: () {
                   Navigator.push(
@@ -173,7 +183,7 @@ class _ChewieDemoState extends State<ChewieDemo> {
                     MaterialPageRoute(builder: (context) => ListWahana()),
                   );
                 },
-                child: Text("ListWahana"))
+                child: Text("List Wahana"))
           ],
         ),
       ),

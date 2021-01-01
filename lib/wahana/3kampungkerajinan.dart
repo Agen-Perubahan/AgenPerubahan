@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class WahanaDua extends StatelessWidget {
+class WahanaTiga extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,7 +10,7 @@ class WahanaDua extends StatelessWidget {
         children: [
           Center(
               child: Image.asset(
-            "assets/images/playground1.png",
+            "assets/images/kampungkerajinan1.png",
             scale: 0.8,
           )),
         ],
@@ -27,47 +27,60 @@ class WahanaDua extends StatelessWidget {
         child: ListView(
           children: [
             Container(
-              padding: EdgeInsets.only(right: 100),
+              padding: EdgeInsets.only(right: 50),
               width: 100,
               child: Card(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 color: Colors.purple,
                 child: Text(
-                  "PLAYGROUND",
+                  "KAMPUNG KERAJINAN",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30,
+                    fontSize: 25,
                   ),
                 ),
               ),
             ),
             Container(
               child: Text(
-                  "Terdapat pipa bercerita, dinding berdendang, katrol, dan gong perdamaian."),
+                "           Dalam zona ini, pengunjung dapat membuat kerajinan menarik, seperti kreasi batik, gerabah, lukis gerabah, kaos.",
+                textAlign: TextAlign.justify,
+              ),
             ),
             Container(
-              child: Text("Pipa Bercerita"),
+              child: Text(""),
+            ),
+            Container(
+              child: Text("Kreasi Batik",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  )),
             ),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Merupakan sebuah alat peraga tentang ilmu rambat suara.",
+                      "Rumah batik merupakan zona dimana anak-anak dapat mengenal warisan berharga Bangsa Indonesia khususnya tentang batik.",
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   children: <TextSpan>[
                     TextSpan(
                       text:
-                          ' Anak anak dapat memperagakan langsung sekaligus mempelajari bagaimana suara bisa merambat melalui suatu benda.',
+                          ' Di zona ini pengunjung dan anak-anak dapat mempraktekkan membuat selembar kain batik mulai dari melukis kerangka desain, ngisen-ngiseni, nembo, mewarnai dan nglorot.',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
+                    ),
+                    TextSpan(
+                      text:
+                          ' Dalam waktu singkat pengunjung memperoleh selembar kain batik yang cantik.',
                     ),
                   ],
                 ),
@@ -89,14 +102,14 @@ class WahanaDua extends StatelessWidget {
                     margin: EdgeInsets.all(10),
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                    child: Image.asset("assets/images/playground2.png"),
+                    child: Image.asset("assets/images/kampungkerajinan2.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/playground1.png',
+                        'assets/images/kampungkerajinan3.png',
                         width: 110.0,
                         height: 110.0,
                       ),
@@ -106,25 +119,36 @@ class WahanaDua extends StatelessWidget {
               ),
             ),
             Container(
-              child: Text("Dinding Berdendang"),
+                margin: EdgeInsets.only(left: 100, right: 100),
+                child: Divider(color: Colors.black)),
+            Container(
+              child: Text("Kreasi Gerabah",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  )),
             ),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Alat peraga dinding berdendang ini menjelaskan tentang hubungan tinggi rendahnya nada dengan luas permukaan gendang.",
+                      "Kreasi gerabah merupakan zona dimana pengunjung dapat merasakan",
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   children: <TextSpan>[
                     TextSpan(
                       text:
-                          'Semakin lebar diameter yang ada di dinding maka semakin rendah suara yang di hasilkan. Semakin kecil diameternya maka suara yang dihasilkan semakin tinggi.',
+                          ' membuat kreasi yang berbahan dasar tanah liat atau yang biasa disebut dengan (gerabah). Disini pengunjung bisa membuat macam-macam bentuk mulai dari vas, asbak, dan lain-lain sesuai keinginan pengunjung.',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
+                    ),
+                    TextSpan(
+                      text:
+                          ' Pengunjung bisa membawa pulang hasil kreasi gerabah untuk menjadi kenang-kenangan.',
                     ),
                   ],
                 ),
@@ -146,14 +170,14 @@ class WahanaDua extends StatelessWidget {
                     margin: EdgeInsets.all(10),
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                    child: Image.asset("assets/images/playground3.png"),
+                    child: Image.asset("assets/images/kampungkerajinan4.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/playground4.png',
+                        'assets/images/kampungkerajinan5.png',
                         width: 110.0,
                         height: 110.0,
                       ),
@@ -162,21 +186,27 @@ class WahanaDua extends StatelessWidget {
                 ],
               ),
             ),
+            Divider(color: Colors.black),
             Container(
-              child: Text("Katrol"),
+              child: Text("Lukis Gerabah",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  )),
             ),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Di area Playground terdapat Peraga Sistem Katrol yaitu peraga yang dibuat untuk membantu pengunjung",
+                      "Lukis gerabah merupakan seni lukis yang menggunakan media gerabah.",
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   children: <TextSpan>[
                     TextSpan(
-                      text: ' memahami Hukum Newton.',
+                      text:
+                          ' Di zona ini pengunjung akan disediakan gerabah dan perwarna untuk melukis gerabah.',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
@@ -184,18 +214,7 @@ class WahanaDua extends StatelessWidget {
                     ),
                     TextSpan(
                       text:
-                          ' Terdapat 4 macam katrol sederhana dirancang untuk mengangkat beban.',
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    ),
-                    TextSpan(
-                      text:
-                          ' Para pengunjung dapat mencoba bagaimana pengaruh katrol terhadap suatu beban.',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
+                          ' Hasil dari melukis gerabah bisa pengunjung bawa pulang sebagai pajangan dirumah atau cinderamata.',
                     ),
                   ],
                 ),
@@ -217,14 +236,14 @@ class WahanaDua extends StatelessWidget {
                     margin: EdgeInsets.all(10),
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                    child: Image.asset("assets/images/playground5.png"),
+                    child: Image.asset("assets/images/kampungkerajinan6.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                       child: Image.asset(
-                        'assets/images/playground6.png',
+                        'assets/images/kampungkerajinan7.png',
                         width: 110.0,
                         height: 110.0,
                       ),
@@ -233,26 +252,35 @@ class WahanaDua extends StatelessWidget {
                 ],
               ),
             ),
+            Divider(color: Colors.black),
             Container(
-              child: Text("Gong Perdamaian"),
+              child: Text("Lukis Kaos",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  )),
             ),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Gong perdamaian diresmikan di Taman Pintar pada 20 Mei 2008.",
+                      "Lukis kaos merupakan salah satu zona yang ada dikampung kerajinan,",
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   children: <TextSpan>[
                     TextSpan(
                       text:
-                          ' Gong Perdamaian ini merupakan lambang persatuan dan kesatuan bagi Bangsa Indonesia yang divisualisasikan dengan pencantuman lambang 5 kepercayaan agama yang diakui di Indonesia, lambang daerah dari 33 propinsi dan 444 kabupaten/kota di Indonesia di sekeliling gong. Selain itu, di bawah Gong Perdamaian tertanam tanah dari 33 propinsi yang ada di Indonesia.',
+                          ' di zona ini pengunjung bisa merasakan bagaimana melukis diatas kaos. pengunjung bisa mendesain, menggambar, dan mewarnai sendiri kaos seseuai dengan keinginan dan kreatifitas.',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
+                    ),
+                    TextSpan(
+                      text:
+                          ' Kaos yang telah kering bisa pengunjung bawa pulang untuk dipakai.',
                     ),
                   ],
                 ),
@@ -274,14 +302,14 @@ class WahanaDua extends StatelessWidget {
                     margin: EdgeInsets.all(10),
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                    child: Image.asset("assets/images/playground7.png"),
+                    child: Image.asset("assets/images/kampungkerajinan8.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                       child: Image.asset(
-                        'assets/images/playground8.png',
+                        'assets/images/kampungkerajinan9.png',
                         width: 110.0,
                         height: 110.0,
                       ),
