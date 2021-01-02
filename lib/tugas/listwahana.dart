@@ -1,3 +1,4 @@
+import 'package:agenperubahan/5sciencetheater.dart';
 import 'package:agenperubahan/wahana/3kampungkerajinan.dart';
 import 'package:agenperubahan/wahana/4planetarium.dart';
 import 'package:agenperubahan/wahana/wahana1.dart';
@@ -184,7 +185,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaEmpat()),
+                                  builder: (context) => WahanaLima()),
                             );
                           },
                           child: Container(
