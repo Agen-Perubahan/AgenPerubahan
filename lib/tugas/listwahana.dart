@@ -1,6 +1,9 @@
-import 'package:agenperubahan/5sciencetheater.dart';
+import 'package:agenperubahan/wahana/5sciencetheater.dart';
 import 'package:agenperubahan/wahana/3kampungkerajinan.dart';
 import 'package:agenperubahan/wahana/4planetarium.dart';
+import 'package:agenperubahan/wahana/6zonaperpus.dart';
+import 'package:agenperubahan/wahana/7gedungpaud.dart';
+import 'package:agenperubahan/wahana/8gedungoval.dart';
 import 'package:agenperubahan/wahana/wahana1.dart';
 import 'package:agenperubahan/wahana/wahana2.dart';
 import 'package:flutter/material.dart';
@@ -222,7 +225,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaSatu()),
+                                  builder: (context) => WahanaEnam()),
                             );
                           },
                           child: Container(
@@ -259,7 +262,44 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaSatu()),
+                                  builder: (context) => WahanaTujuh()),
+                            );
+                          },
+                          child: Container(
+                            child: Card(
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Container(
+                                    child: Image.asset(
+                                        "assets/images/playground1.png"),
+                                    height: 100,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.30,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.40,
+                                    child: Text("Gedung Paud"),
+                                  )
+                                ],
+                              ),
+                            ),
+                            height: 120,
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                        ),
+                        new GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => WahanaDelapan()),
                             );
                           },
                           child: Container(
@@ -296,7 +336,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaSatu()),
+                                  builder: (context) => WahanaDelapan()),
                             );
                           },
                           child: Container(
