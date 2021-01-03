@@ -4,6 +4,7 @@ import 'package:agenperubahan/wahana/4planetarium.dart';
 import 'package:agenperubahan/wahana/6zonaperpus.dart';
 import 'package:agenperubahan/wahana/7gedungpaud.dart';
 import 'package:agenperubahan/wahana/8gedungoval.dart';
+import 'package:agenperubahan/wahana/9gedungkotak.dart';
 import 'package:agenperubahan/wahana/wahana1.dart';
 import 'package:agenperubahan/wahana/wahana2.dart';
 import 'package:flutter/material.dart';
@@ -336,7 +337,7 @@ class ListWahana extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => WahanaDelapan()),
+                                  builder: (context) => WahanaSembilan()),
                             );
                           },
                           child: Container(
