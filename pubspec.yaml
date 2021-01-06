@@ -53,6 +53,7 @@ flutter:
   assets:
     - assets/images/fajar.jpg
     - assets/video.mp4
+    - assets/images/background.jpg
     - assets/
     - assets/images/gedungkotak1.png
     - assets/images/gedungkotak2.png

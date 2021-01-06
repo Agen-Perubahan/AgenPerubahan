@@ -22,6 +22,7 @@ class ListWahana extends StatelessWidget {
               title: Text("Daftar Wahana"),
             ),
             body: Container(
+              color: Colors.blue,
               child: Column(
                 children: [
                   // Container(

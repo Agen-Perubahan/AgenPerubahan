@@ -73,23 +73,14 @@ class WahanaSatu extends StatelessWidget {
               ),
             ),
             Container(
-              child: GridView.count(
-                physics: NeverScrollableScrollPhysics(),
-                crossAxisCount: 2,
-                shrinkWrap: true,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/wahanabahari2.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
-                    ),
-                  ),
-                ],
+              margin: EdgeInsets.all(10),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.asset(
+                  'assets/images/wahanabahari2.png',
+                  width: 150.0,
+                  height: 150.0,
+                ),
               ),
             ),
           ],

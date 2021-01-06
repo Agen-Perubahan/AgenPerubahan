@@ -123,67 +123,84 @@ class _ChewieDemoState extends State<ChewieDemo> {
         platform: _platform ?? Theme.of(context).platform,
       ),
       home: Scaffold(
-        body: Column(
-          children: <Widget>[
+        body: Stack(
+          children: [
+            Center(
+                child: Image.asset(
+              "assets/images/background.jpg",
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              fit: BoxFit.cover,
+            )),
             Container(
-              margin: EdgeInsets.only(top: 60),
-              child: Text(
-                "Mengenal Taman Pintar Secara Virtual",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30,
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                color: Colors.blue,
-                margin: EdgeInsets.only(top: 50, bottom: 50),
-                padding: EdgeInsets.all(10),
-                child: Center(
-                  child: Chewie(
-                    controller: _chewieController,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              padding: EdgeInsets.all(10),
-              color: Colors.red,
+              // color: Colors.blue[100],
               child: Column(
-                children: [
+                children: <Widget>[
                   Container(
-                    child: Text("Galeri"),
-                  ),
-                  Container(
-                    height: 200,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      padding: const EdgeInsets.all(10),
-                      itemCount: image.length,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: 100,
-                          padding: EdgeInsets.all(5),
-                          child: Image.asset(image[index]),
-                        );
-                      },
+                    margin: EdgeInsets.only(top: 60),
+                    child: Text(
+                      "Mengenal Taman Pintar Secara Virtual",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 30,
+                      ),
                     ),
                   ),
+                  Container(
+                    child: Expanded(
+                      child: Container(
+                        margin: EdgeInsets.only(top: 50, bottom: 50),
+                        padding: EdgeInsets.all(10),
+                        child: Center(
+                          child: Container(
+                            child: Chewie(
+                              controller: _chewieController,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    padding: EdgeInsets.all(10),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Text("Galeri"),
+                        ),
+                        Container(
+                          height: 200,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            padding: const EdgeInsets.all(10),
+                            itemCount: image.length,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                height: 100,
+                                padding: EdgeInsets.all(5),
+                                child: Image.asset(image[index]),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  FlatButton(
+                      color: Colors.blue,
+                      padding: EdgeInsets.only(bottom: 20),
+                      onPressed: () {
+                        _chewieController.pause();
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ListWahana()),
+                        );
+                      },
+                      child: Text("List Wahana")),
                 ],
               ),
             ),
-            FlatButton(
-                color: Colors.blue,
-                padding: EdgeInsets.only(bottom: 20),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ListWahana()),
-                  );
-                },
-                child: Text("List Wahana"))
           ],
         ),
       ),

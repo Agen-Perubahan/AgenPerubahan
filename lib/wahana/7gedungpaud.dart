@@ -83,7 +83,29 @@ class WahanaTujuh extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/zonaperpus1.png',
+                        'assets/images/gedungpaud2.png',
+                        width: 110.0,
+                        height: 110.0,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        'assets/images/gedungpaud3.png',
+                        width: 110.0,
+                        height: 110.0,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        'assets/images/gedungpaud4.png',
                         width: 110.0,
                         height: 110.0,
                       ),
