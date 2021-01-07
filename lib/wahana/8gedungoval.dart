@@ -119,6 +119,12 @@ class WahanaDelapan extends StatelessWidget {
               ),
             ),
             Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
+            ),
+            Container(
               child: Text("Generator Pedal"),
             ),
             Container(
@@ -180,6 +186,12 @@ class WahanaDelapan extends StatelessWidget {
               ),
             ),
             Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
+            ),
+            Container(
               child: Text("Aquarium Air Tawar"),
             ),
             Container(
@@ -229,6 +241,12 @@ class WahanaDelapan extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
               child: Text("Zona Tata Surya"),
@@ -298,6 +316,12 @@ class WahanaDelapan extends StatelessWidget {
               ),
             ),
             Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
+            ),
+            Container(
               child: Text("Lorong Ilusi"),
             ),
             Container(
@@ -358,6 +382,12 @@ class WahanaDelapan extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
               child: Text("Zona Kehidupan Purba"),

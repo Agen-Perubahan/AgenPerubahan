@@ -119,8 +119,11 @@ class WahanaTiga extends StatelessWidget {
               ),
             ),
             Container(
-                margin: EdgeInsets.only(left: 100, right: 100),
-                child: Divider(color: Colors.black)),
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
+            ),
             Container(
               child: Text("Kreasi Gerabah",
                   style: TextStyle(
@@ -186,7 +189,12 @@ class WahanaTiga extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(color: Colors.black),
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
+            ),
             Container(
               child: Text("Lukis Gerabah",
                   style: TextStyle(
@@ -252,7 +260,12 @@ class WahanaTiga extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(color: Colors.black),
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
+            ),
             Container(
               child: Text("Lukis Kaos",
                   style: TextStyle(

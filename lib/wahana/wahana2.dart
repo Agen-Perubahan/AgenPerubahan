@@ -111,8 +111,11 @@ class WahanaDua extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(
-              height: 5,
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
               child: Text("Dinding Berdendang"),
@@ -170,6 +173,12 @@ class WahanaDua extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
               child: Text("Katrol"),
@@ -241,6 +250,12 @@ class WahanaDua extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Container(
+              child: Divider(
+                color: Colors.black,
+              ),
+              margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
               child: Text("Gong Perdamaian"),
