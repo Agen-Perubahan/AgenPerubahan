@@ -44,12 +44,13 @@ class WahanaSatu extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Kolam air yang berfungsi sebagai sungai/danau dimana anak-anak dapat menaiki perahu diatasnya",
+                      "      Kolam air yang berfungsi sebagai sungai/danau dimana anak-anak dapat menaiki perahu diatasnya",
                   style: TextStyle(
                     color: Colors.black,
                   ),
@@ -66,6 +67,7 @@ class WahanaSatu extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

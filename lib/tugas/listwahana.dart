@@ -19,21 +19,12 @@ class ListWahana extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: Text("Daftar Wahana"),
+              title: Text("Mengenal Wahana Secara Virtual"),
             ),
             body: Container(
               color: Colors.blue,
               child: Column(
                 children: [
-                  // Container(
-                  //   margin: EdgeInsets.only(bottom: 5, top: 5),
-                  //   //padding: EdgeInsets.only(bottom: 50, top: 50),
-                  //   child: Text(
-                  //     "Daftar Wahana Taman Pintar Yogyakarta",
-                  //     textAlign: TextAlign.center,
-                  //     style: TextStyle(fontSize: 20, color: Colors.black),
-                  //   ),
-                  // ),
                   Expanded(
                     child: ListView(
                       shrinkWrap: true,
@@ -164,7 +155,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/planetarium1.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,
@@ -201,7 +192,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/sciencetheater1.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,
@@ -238,7 +229,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/zonaperpus2.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,
@@ -275,7 +266,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/gedungpaud1.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,
@@ -312,7 +303,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/gedungoval1.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,
@@ -349,7 +340,7 @@ class ListWahana extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Image.asset(
-                                        "assets/images/playground1.png"),
+                                        "assets/images/gedungkotak1.png"),
                                     height: 100,
                                     width: MediaQuery.of(context).size.width *
                                         0.30,

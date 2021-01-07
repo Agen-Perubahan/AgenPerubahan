@@ -44,12 +44,17 @@ class WahanaDua extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
-                  "Terdapat pipa bercerita, dinding berdendang, katrol, dan gong perdamaian."),
+                  "     Terdapat pipa bercerita, dinding berdendang, katrol, dan gong perdamaian."),
             ),
+            SizedBox(height: 25),
             Container(
-              child: Text("Pipa Bercerita"),
+              child: Text(
+                "Pipa Bercerita",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
             ),
             Container(
               child: RichText(
@@ -73,6 +78,7 @@ class WahanaDua extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -104,6 +110,9 @@ class WahanaDua extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Divider(
+              height: 5,
             ),
             Container(
               child: Text("Dinding Berdendang"),
