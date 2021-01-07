@@ -118,7 +118,8 @@ class WahanaDua extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Dinding Berdendang"),
+              child: Text("Dinding Berdendang",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -181,7 +182,8 @@ class WahanaDua extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Katrol"),
+              child:
+                  Text("Katrol", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -258,7 +260,8 @@ class WahanaDua extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Gong Perdamaian"),
+              child: Text("Gong Perdamaian",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(

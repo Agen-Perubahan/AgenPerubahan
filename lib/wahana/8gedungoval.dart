@@ -49,7 +49,8 @@ class WahanaDelapan extends StatelessWidget {
                   "Terdapat banyak alat peraga yang berhubugan dengan sains. Aquarium air tawar, kehidupan purba, terowongan ilusi, zona generator van de graaf, dan tata surya, generator pedal."),
             ),
             Container(
-              child: Text("Zona Generator Van De Graaf"),
+              child: Text("Zona Generator Van De Graaf",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -125,7 +126,8 @@ class WahanaDelapan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Generator Pedal"),
+              child: Text("Generator Pedal",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -192,7 +194,8 @@ class WahanaDelapan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Aquarium Air Tawar"),
+              child: Text("Aquarium Air Tawar",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -249,7 +252,8 @@ class WahanaDelapan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Zona Tata Surya"),
+              child: Text("Zona Tata Surya",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -322,7 +326,8 @@ class WahanaDelapan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Lorong Ilusi"),
+              child: Text("Lorong Ilusi",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -390,7 +395,8 @@ class WahanaDelapan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Zona Kehidupan Purba"),
+              child: Text("Zona Kehidupan Purba",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(

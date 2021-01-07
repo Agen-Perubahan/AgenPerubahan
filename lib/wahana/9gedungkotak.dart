@@ -48,7 +48,8 @@ class WahanaSembilan extends StatelessWidget {
               child: Text("Memperkenalkan eduksi mengenai teknologi"),
             ),
             Container(
-              child: Text("Zona Teknologi Populer"),
+              child: Text("Zona Teknologi Populer",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -115,7 +116,8 @@ class WahanaSembilan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Zona Air Untuk Kebaikan Hidup"),
+              child: Text("Zona Air Untuk Kebaikan Hidup",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -183,7 +185,8 @@ class WahanaSembilan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Zona KPU"),
+              child: Text("Zona KPU",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -239,7 +242,8 @@ class WahanaSembilan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Zona Panas Bumi Geothermal"),
+              child: Text("Zona Panas Bumi Geothermal",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -307,7 +311,8 @@ class WahanaSembilan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Lorong Ilusi"),
+              child: Text("Lorong Ilusi",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
@@ -375,7 +380,8 @@ class WahanaSembilan extends StatelessWidget {
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
             Container(
-              child: Text("Zona Kehidupan Purba"),
+              child: Text("Zona Kehidupan Purba",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Container(
               child: RichText(
