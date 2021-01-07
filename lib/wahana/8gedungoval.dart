@@ -44,10 +44,12 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
-                  "Terdapat banyak alat peraga yang berhubugan dengan sains. Aquarium air tawar, kehidupan purba, terowongan ilusi, zona generator van de graaf, dan tata surya, generator pedal."),
+                  "     Terdapat banyak alat peraga yang berhubugan dengan sains. Aquarium air tawar, kehidupan purba, terowongan ilusi, zona generator van de graaf, dan tata surya, generator pedal."),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Generator Van De Graaf",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -82,6 +84,7 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -125,6 +128,7 @@ class WahanaDelapan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Generator Pedal",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -150,6 +154,7 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -193,6 +198,7 @@ class WahanaDelapan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Aquarium Air Tawar",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -219,6 +225,7 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -251,6 +258,7 @@ class WahanaDelapan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Tata Surya",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -282,6 +290,7 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -325,6 +334,7 @@ class WahanaDelapan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Lorong Ilusi",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -351,6 +361,7 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -394,6 +405,7 @@ class WahanaDelapan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Kehidupan Purba",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -420,6 +432,7 @@ class WahanaDelapan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

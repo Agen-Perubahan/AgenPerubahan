@@ -44,9 +44,11 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
-              child: Text("Memperkenalkan eduksi mengenai teknologi"),
+              child: Text("     Memperkenalkan eduksi mengenai teknologi"),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Teknologi Populer",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -72,6 +74,7 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -115,6 +118,7 @@ class WahanaSembilan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Air Untuk Kebaikan Hidup",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -141,6 +145,7 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -184,6 +189,7 @@ class WahanaSembilan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona KPU",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -209,6 +215,7 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -241,6 +248,7 @@ class WahanaSembilan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Panas Bumi Geothermal",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -267,6 +275,7 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -310,6 +319,7 @@ class WahanaSembilan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Lorong Ilusi",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -336,6 +346,7 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -379,6 +390,7 @@ class WahanaSembilan extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Zona Kehidupan Purba",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -405,6 +417,7 @@ class WahanaSembilan extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

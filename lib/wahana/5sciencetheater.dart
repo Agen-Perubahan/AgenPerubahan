@@ -44,11 +44,13 @@ class WahanaLima extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
-                  text: "Kapasitas 50-60 orang untuk pemutaran film sains.",
+                  text:
+                      "     Kapasitas 50-60 orang untuk pemutaran film sains.",
                   style: TextStyle(
                     color: Colors.black,
                   ),
@@ -65,6 +67,7 @@ class WahanaLima extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

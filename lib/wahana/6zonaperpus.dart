@@ -44,12 +44,13 @@ class WahanaEnam extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Menyediakan berbagai macam koleksi buku ilmu pengetahuan. Perpustakaan Taman Pintar di desain unik,luas, dan nyaman.",
+                      "     Menyediakan berbagai macam koleksi buku ilmu pengetahuan. Perpustakaan Taman Pintar di desain unik,luas, dan nyaman.",
                   style: TextStyle(
                     color: Colors.black,
                   ),
@@ -66,6 +67,7 @@ class WahanaEnam extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

@@ -117,6 +117,7 @@ class WahanaDua extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Dinding Berdendang",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -143,6 +144,7 @@ class WahanaDua extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -181,6 +183,7 @@ class WahanaDua extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child:
                   Text("Katrol", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -221,6 +224,7 @@ class WahanaDua extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -259,6 +263,7 @@ class WahanaDua extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Gong Perdamaian",
                   style: TextStyle(fontWeight: FontWeight.bold)),
@@ -285,6 +290,7 @@ class WahanaDua extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

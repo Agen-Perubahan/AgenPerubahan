@@ -44,12 +44,13 @@ class WahanaTujuh extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
                   text:
-                      "Mengenalkan sains dan teknologi tanpa meninggalkan konsep bermain. Terdapat 2 gedung PAUD yang terdapat di taman pintar, yaitu PAUD Barat dan PAUD Timur yang menawarkan alat peraga Pendidikan Interaktif yang dikhususkan untuk anak anak usia 2 – 7 tahun.",
+                      "     Mengenalkan sains dan teknologi tanpa meninggalkan konsep bermain. Terdapat 2 gedung PAUD yang terdapat di taman pintar, yaitu PAUD Barat dan PAUD Timur yang menawarkan alat peraga Pendidikan Interaktif yang dikhususkan untuk anak anak usia 2 – 7 tahun.",
                   style: TextStyle(
                     color: Colors.black,
                   ),
@@ -66,6 +67,7 @@ class WahanaTujuh extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

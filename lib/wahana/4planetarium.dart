@@ -44,11 +44,12 @@ class WahanaEmpat extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: RichText(
                 textAlign: TextAlign.justify,
                 text: TextSpan(
-                  text: "Mengenalkan dan dapat melihat benda-benda langit",
+                  text: "     Mengenalkan dan dapat melihat benda-benda langit",
                   style: TextStyle(
                     color: Colors.black,
                   ),
@@ -72,6 +73,7 @@ class WahanaEmpat extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",

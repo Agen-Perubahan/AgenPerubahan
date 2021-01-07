@@ -44,6 +44,7 @@ class WahanaTiga extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "           Dalam zona ini, pengunjung dapat membuat kerajinan menarik, seperti kreasi batik, gerabah, lukis gerabah, kaos.",
@@ -86,6 +87,7 @@ class WahanaTiga extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -124,6 +126,7 @@ class WahanaTiga extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Kreasi Gerabah",
                   style: TextStyle(
@@ -157,6 +160,7 @@ class WahanaTiga extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -195,6 +199,7 @@ class WahanaTiga extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Lukis Gerabah",
                   style: TextStyle(
@@ -228,6 +233,7 @@ class WahanaTiga extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
@@ -266,6 +272,7 @@ class WahanaTiga extends StatelessWidget {
               ),
               margin: EdgeInsets.only(left: 100, right: 100),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text("Lukis Kaos",
                   style: TextStyle(
@@ -299,6 +306,7 @@ class WahanaTiga extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Container(
               child: Text(
                 "Kegiatan",
