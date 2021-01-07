@@ -133,7 +133,6 @@ class _ChewieDemoState extends State<ChewieDemo> {
               fit: BoxFit.cover,
             )),
             Container(
-              // color: Colors.blue[100],
               child: Column(
                 children: <Widget>[
                   Container(
@@ -195,16 +194,19 @@ class _ChewieDemoState extends State<ChewieDemo> {
                       ],
                     ),
                   ),
-                  RaisedButton.icon(
-                    onPressed: () {
-                      _chewieController.pause();
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ListWahana()),
-                      );
-                    },
-                    icon: Icon(Icons.list),
-                    label: Text("List Wahana"),
+                  Container(
+                    margin: EdgeInsets.only(bottom: 20),
+                    child: RaisedButton.icon(
+                      onPressed: () {
+                        _chewieController.pause();
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ListWahana()),
+                        );
+                      },
+                      icon: Icon(Icons.list),
+                      label: Text("List Wahana"),
+                    ),
                   ),
                 ],
               ),
