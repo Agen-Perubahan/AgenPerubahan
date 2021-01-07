@@ -76,13 +76,10 @@ class WahanaLima extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset(
-                  'assets/images/sciencetheater2.png',
-                  width: 150.0,
-                  height: 150.0,
-                ),
+              child: Image.asset(
+                'assets/images/sciencetheater2.png',
+                width: 150.0,
+                height: 150.0,
               ),
             ),
           ],

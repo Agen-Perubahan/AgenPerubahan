@@ -99,24 +99,18 @@ class WahanaDelapan extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval2.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval2.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval3.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval3.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -169,24 +163,18 @@ class WahanaDelapan extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval4.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval4.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval5.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval5.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -233,23 +221,11 @@ class WahanaDelapan extends StatelessWidget {
               ),
             ),
             Container(
-              child: GridView.count(
-                physics: NeverScrollableScrollPhysics(),
-                crossAxisCount: 2,
-                shrinkWrap: true,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval6.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
-                    ),
-                  ),
-                ],
+              margin: EdgeInsets.all(10),
+              child: Image.asset(
+                'assets/images/gedungoval6.png',
+                width: 110.0,
+                height: 110.0,
               ),
             ),
             Container(
@@ -305,24 +281,18 @@ class WahanaDelapan extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval9.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval9.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval8.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval8.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -376,24 +346,18 @@ class WahanaDelapan extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval10.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval10.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval11.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval11.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -447,24 +411,18 @@ class WahanaDelapan extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval12.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval12.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/gedungoval13.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/gedungoval13.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],

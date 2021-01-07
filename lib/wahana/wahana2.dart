@@ -93,19 +93,14 @@ class WahanaDua extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/playground2.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/playground1.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/playground1.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -159,19 +154,14 @@ class WahanaDua extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/playground3.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/playground4.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/playground4.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -239,19 +229,14 @@ class WahanaDua extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/playground5.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/playground6.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/playground6.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -305,19 +290,12 @@ class WahanaDua extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/playground7.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/playground8.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/playground8.png',
                     ),
                   ),
                 ],

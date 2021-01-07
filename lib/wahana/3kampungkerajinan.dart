@@ -102,19 +102,14 @@ class WahanaTiga extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/kampungkerajinan2.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/kampungkerajinan3.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/kampungkerajinan3.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -175,19 +170,14 @@ class WahanaTiga extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/kampungkerajinan4.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image.asset(
-                        'assets/images/kampungkerajinan5.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/kampungkerajinan5.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -248,19 +238,14 @@ class WahanaTiga extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/kampungkerajinan6.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        'assets/images/kampungkerajinan7.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/kampungkerajinan7.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
@@ -321,19 +306,14 @@ class WahanaTiga extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: Image.asset("assets/images/kampungkerajinan8.png"),
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        'assets/images/kampungkerajinan9.png',
-                        width: 110.0,
-                        height: 110.0,
-                      ),
+                    child: Image.asset(
+                      'assets/images/kampungkerajinan9.png',
+                      width: 110.0,
+                      height: 110.0,
                     ),
                   ),
                 ],
