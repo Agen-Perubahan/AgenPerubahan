@@ -33,7 +33,7 @@ class WahanaTiga extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
-                color: Colors.purple,
+                color: Colors.blue,
                 child: Text(
                   "KAMPUNG KERAJINAN",
                   textAlign: TextAlign.center,

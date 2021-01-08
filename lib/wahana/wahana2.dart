@@ -33,7 +33,7 @@ class WahanaDua extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                color: Colors.purple,
+                color: Colors.blue,
                 child: Text(
                   "PLAYGROUND",
                   textAlign: TextAlign.center,
